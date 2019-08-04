@@ -31,9 +31,11 @@ Replace `$PYTHON3` with your Python3 binary, often `python` or `python3` will do
 
 Arguments:
 
- - `-d` or `--default`
-   - Uses default values instead of user input for applicable options
+ - `-t` or `--target`
+   - Changes the target Minecraft server version
+   - See [Compatible Minecraft Versions](#compatible-minecraft-versions)
+   - Default value: `js1.14`
  - `-s <stress>` or `--stress <stress>`
    - Sets how much stress to put on the server
    - Ranges from `1` to `10`
-   - Default value: user input or `5` if `-d` option is set
+   - Default value: `5`
