@@ -10,7 +10,11 @@ The following dependencies must be installed on your system:
 
  - [Python3](https://www.python.org/downloads/)
  
- Simply run `generator.py` via Python3 or use the [CLI](#command-line-interface)
+ Simply pipe `generator.py` into your Minecraft server:
+ 
+  - `path/to/generator.py | java -Xms512M -Xmx2048M -jar path/to/server.jar nogui`
+  
+ Look at the [CLI](#command-line-interface) for further options.
 
 ## Compatible Minecraft Versions
 
@@ -29,14 +33,6 @@ Arguments:
 
  - `-d` or `--default`
    - Uses default values instead of user input for applicable options
- - `-j` or `--jar` or `--jar-file`
-   - Sets the location of the server jar file
-   - Default value: user input
- - `-c` or `--cmd` or `--command`
-   - Sets the command used to start the server
-   - Default value: user input or one of the following if `-d` option is set:
-     - Linux: `java -Xms512M -Xmx2048M -jar ${SERVER_JAR_FILE} nogui`
-     - Windows: `java -Xms512M -Xmx2048M -jar %SERVER_JAR_FILE% nogui`
  - `-s <stress>` or `--stress <stress>`
    - Sets how much stress to put on the server
    - Ranges from `1` to `10`
