@@ -6,7 +6,7 @@ Pre-generate your Minecraft worlds to reduce lag, especially suitable for UHC.
 
 ## Start Generating
 
-The following dependecies must be installed on your system:
+The following dependencies must be installed on your system:
 
  - [Python3](https://www.python.org/downloads/)
  
