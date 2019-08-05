@@ -35,6 +35,18 @@ Arguments:
    - Changes the target Minecraft server version
    - See [Compatible Minecraft Versions](#compatible-minecraft-versions)
    - Default value: `js1.14`
+ - `-x <chunk-x>` or `--origin-x <chunk-x>`
+   - Sets the x origin
+	 - Default value: `0`
+ - `-z <chunk-z>` or `--origin-z <chunk-z>`
+   - Sets the z origin
+	 - Default value: `0`
+ - `-w <chunks>` or `--width <chunks>`
+   - Sets the number of chunks for the width
+	 - Default value: `64`
+ - `-l <chunks>` or `--length <chunks>`
+   - Sets the number of chunks for the length
+	 - Default value: `64`
  - `-s <stress>` or `--stress <stress>`
    - Sets how much stress to put on the server
    - Ranges from `1` to `10`
