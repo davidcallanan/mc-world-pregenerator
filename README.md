@@ -37,34 +37,34 @@ Arguments:
    - Default value: `js1.14`
  - `-x <chunk-x>` or `--center-x <chunk-x>`
    - Sets the x center
-	 - Default value: `0`
+   - Default value: `0`
  - `-z <chunk-z>` or `--center-z <chunk-z>`
    - Sets the z center
-	 - Default value: `0`
+   - Default value: `0`
  - `-w <chunks>` or `--width <chunks>`
    - Sets the number of chunks for the width
-	 - Default value: `64`
+   - Default value: `64`
  - `-l <chunks>` or `--length <chunks>`
    - Sets the number of chunks for the length
-	 - Default value: `64`
+   - Default value: `64`
  - `-s <chunks>` or `--segment-size <chunks>`
    - Sets number of chunks to generate in each segment
-	 - Rounds down to the nearest square
-	 - If this number is too high:
+   - Rounds down to the nearest square
+   - If this number is too high:
      - the server may fall behind and chunks may be skipped
-	   - the server may run out of RAM and crash
-	 - Min value: `1`
-	 - Max value: `256`
-	 - Default value: `64`
+     - the server may run out of RAM and crash
+   - Min value: `1`
+   - Max value: `256`
+   - Default value: `64`
  - `-T <time>` or `--segment-time <time>`
    - Sets the time interval in seconds to generate each segment
-	 - If this number is too low there may be similar consequences to a high segment size
-	 - Min value: `1`
-	 - Max value: `16`
-	 - Default value: `8`
+   - If this number is too low there may be similar consequences to a high segment size
+   - Min value: `1`
+   - Max value: `16`
+   - Default value: `8`
  - `-d <time>` or `--delay <time>`
    - Sets the delay in seconds before pre-generating the world
-	 - This is useful on Windows where there's no fifo files
+   - This is useful on Windows where there's no fifo files
  - `-k` or `--keep-loaded`
    - Keeps chunks loaded after generation
-	 - Eats up a lot of RAM
+   - Eats up a lot of RAM
