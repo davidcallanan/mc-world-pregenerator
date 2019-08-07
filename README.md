@@ -1,6 +1,6 @@
 # Minecraft World Pre-generator
 
-**Version**: 1.0.0-dev
+**Version**: 1.0.0
 
 Pre-generate your Minecraft worlds to reduce lag, especially suitable for UHC.
 
@@ -10,11 +10,11 @@ The following dependencies must be installed on your system:
 
  - [Python3](https://www.python.org/downloads/)
  
- Simply pipe `generator.py` into your Minecraft server:
+ Simply pipe `$PYTHON3 generator.py` into your Minecraft server:
  
-  - `path/to/generator.py | java -Xms512M -Xmx2048M -jar path/to/server.jar nogui`
+  - `python path/to/generator.py | java -Xms512M -Xmx2048M -jar path/to/server.jar nogui`
   
- Look at the [CLI](#command-line-interface) for further options.
+ Take a look at the [CLI](#command-line-interface) for further options.
 
 ## Compatible Minecraft Versions
 
@@ -35,11 +35,11 @@ Arguments:
    - Changes the target Minecraft server version
    - See [Compatible Minecraft Versions](#compatible-minecraft-versions)
    - Default value: `js1.14`
- - `-x <chunk-x>` or `--origin-x <chunk-x>`
-   - Sets the x origin
+ - `-x <chunk-x>` or `--center-x <chunk-x>`
+   - Sets the x center
 	 - Default value: `0`
- - `-z <chunk-z>` or `--origin-z <chunk-z>`
-   - Sets the z origin
+ - `-z <chunk-z>` or `--center-z <chunk-z>`
+   - Sets the z center
 	 - Default value: `0`
  - `-w <chunks>` or `--width <chunks>`
    - Sets the number of chunks for the width

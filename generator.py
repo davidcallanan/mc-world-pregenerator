@@ -99,8 +99,8 @@ max_segment_time = 16
 
 parser = argparse.ArgumentParser(description='World pregenerator\nPipe the output of this script into your server')
 parser.add_argument('-t', '--target', default=default_target, help='target minecraft version')
-parser.add_argument('-x', '--origin-x', type=int, default=default_origin_x, help='x origin in chunks')
-parser.add_argument('-z', '--origin-z', type=int, default=default_origin_z, help='z origin in chunks')
+parser.add_argument('-x', '--center-x', type=int, default=default_origin_x, help='x center in chunks')
+parser.add_argument('-z', '--center-z', type=int, default=default_origin_z, help='z center in chunks')
 parser.add_argument('-w', '--width', type=int, default=default_width, help='width in chunks')
 parser.add_argument('-l', '--length', type=int, default=default_length, help='length in chunks')
 parser.add_argument('-s', '--segment-size', type=int, default=default_segment_size, help='segment size in chunks')
@@ -113,8 +113,8 @@ args = parser.parse_args()
 
 width = args.width
 length = args.length
-xoffset = args.origin_x - math.ceil(width / 2)
-zoffset = args.origin_z - math.ceil(length / 2)
+xoffset = args.center_x - math.ceil(width / 2)
+zoffset = args.center_z - math.ceil(length / 2)
 segment_size = min(max(args.segment_size, min_segment_size), max_segment_size)
 segment_time = min(max(args.segment_time, min_segment_time), max_segment_time)
 delay = args.delay
