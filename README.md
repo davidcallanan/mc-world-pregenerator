@@ -1,6 +1,6 @@
 # Minecraft World Pre-generator
 
-**Version**: 1.0.0
+**Version**: 1.0.1
 
 Pre-generate your Minecraft worlds to reduce lag, especially suitable for UHC.
 

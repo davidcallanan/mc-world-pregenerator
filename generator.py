@@ -20,10 +20,10 @@ def note_pregeneration_begin(predicted_seconds):
 	predicted_minutes = math.floor(predicted_seconds / 60)
 	if predicted_minutes > 0: minute_text = f"{predicted_minutes} minutes"
 	else: minute_text = f"{predicted_seconds} seconds"
-	return '/tellraw @a ["",{"text":"World pre-generation has started!","color":"gold","hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"This will take at minimum ' + str(predicted_seconds) + ' seconds!","color":"light_purple"}]}}},{"text":"github.com/davidcallanan/mc-world-pregenerator","color":"yellow","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.github.com/davidcallanan/mc-loot-randomizer"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Generator source code","color":"green"}]}}},{"text":"This will take at minimum ' + str(minute_text) + '","color":"light_purple","underlined":false}]'
+	return '/tellraw @a ["",{"text":"World pre-generation has started!\n","color":"gold","hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"This will take at minimum ' + str(predicted_seconds) + ' seconds!","color":"light_purple"}]}}},{"text":"github.com/davidcallanan/mc-world-pregenerator","color":"yellow","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.github.com/davidcallanan/mc-world-pregenerator"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Generator source code","color":"green"}]}}},{"text":"This will take at minimum ' + str(minute_text) + '","color":"light_purple","underlined":false}]'
 
 def note_pregeneration_finish():
-	return 'tellraw @a ["",{"text":"World pre-generation has completed!","color":"gold"},{"text":"github.com/davidcallanan/mc-world-pregenerator","color":"yellow","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.github.com/davidcallanan/mc-loot-randomizer"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Generator source code","color":"green"}]}}}]'
+	return 'tellraw @a ["",{"text":"World pre-generation has completed!\n","color":"gold"},{"text":"github.com/davidcallanan/mc-world-pregenerator","color":"yellow","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.github.com/davidcallanan/mc-loot-randomizer"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Generator source code","color":"green"}]}}}]'
 
 def note_progress(progress):
 	return f"/say [World generation] {round(progress * 100, 1)}% complete"
